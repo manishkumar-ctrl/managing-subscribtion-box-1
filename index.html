@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Subscription Box Manager</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<section class="hero">
+ <div><h1>Subscription box manager</h1><p>Plan your boxes, know when every customer is billed, and see who is leaving before they go. All in one dashboard.</p><a class="btn" href="#app">Open dashboard</a><a class="btn ghost" href="#how">See how it works</a></div>
+ <svg viewBox="0 0 360 290" role="img" aria-label="An open subscription box with products, a billing calendar and a churn chart">
+  <ellipse cx="180" cy="262" rx="140" ry="14" fill="var(--line)"/>
+  <rect x="120" y="70" width="26" height="90" rx="8" fill="#0e7c86"/><circle cx="195" cy="100" r="30" fill="#c8404f"/><rect x="235" y="84" width="44" height="70" rx="6" fill="#7a5ac8"/><polygon points="168,40 175,58 195,58 179,69 185,88 168,77 151,88 157,69 141,58 161,58" fill="#f2b01e"/>
+  <polygon points="50,150 310,150 290,262 70,262" fill="#d9a15b"/><polygon points="50,150 90,118 270,118 310,150" fill="#c48a43"/><rect x="162" y="150" width="36" height="112" fill="#f2b01e" opacity=".85"/>
+  <text x="180" y="215" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="15" fill="#10242c" transform="rotate(0)"> </text>
+  <g transform="translate(14,20)"><rect width="84" height="72" rx="6" fill="var(--card)" stroke="var(--line)"/><rect width="84" height="20" rx="6" fill="var(--acc)"/><g fill="var(--line)"><rect x="10" y="30" width="12" height="10"/><rect x="28" y="30" width="12" height="10"/><rect x="46" y="30" width="12" height="10"/><rect x="10" y="48" width="12" height="10"/></g><rect x="28" y="48" width="12" height="10" fill="var(--tape)"/></g>
+  <g transform="translate(268,12)"><rect width="84" height="64" rx="6" fill="var(--card)" stroke="var(--line)"/><rect x="12" y="34" width="12" height="20" fill="var(--tape)"/><rect x="32" y="24" width="12" height="30" fill="var(--tape)"/><rect x="52" y="40" width="12" height="14" fill="var(--tape)"/><polyline points="14,30 38,22 58,34 74,16" fill="none" stroke="var(--bad)" stroke-width="3"/></g>
+ </svg>
+</section>
+<header id="app">
+ <div class="top">
+  <div><h2>Your dashboard</h2><p class="sub">Track plans, billing cycles and customer churn for your box business in one place.</p></div>
+  <div class="next" id="next" aria-live="polite"></div>
+ </div>
+ <nav role="tablist" id="tabs"></nav>
+</header>
+<main id="view"></main>
+<section class="sec" id="how"><h2>How it works</h2><div class="steps">
+ <div class="card step"><svg viewBox="0 0 72 72" aria-hidden="true"><rect x="8" y="26" width="56" height="38" fill="#d9a15b"/><polygon points="8,26 20,10 52,10 64,26" fill="#c48a43"/><rect x="30" y="26" width="12" height="38" fill="#f2b01e"/></svg><h3>1. Pick a plan</h3><p style="color:var(--mut)">Choose Starter, Plus or Premium for each customer, and a monthly, quarterly or yearly cycle.</p></div>
+ <div class="card step"><svg viewBox="0 0 72 72" aria-hidden="true"><rect x="8" y="12" width="56" height="52" rx="6" fill="var(--card)" stroke="var(--acc)" stroke-width="3"/><rect x="8" y="12" width="56" height="14" fill="var(--acc)"/><rect x="20" y="36" width="10" height="8" fill="var(--line)"/><rect x="42" y="36" width="10" height="8" fill="var(--tape)"/><rect x="20" y="50" width="10" height="8" fill="var(--line)"/></svg><h3>2. Track billing dates</h3><p style="color:var(--mut)">See who is due this week, how much to collect, and mark invoices as paid.</p></div>
+ <div class="card step"><svg viewBox="0 0 72 72" aria-hidden="true"><rect x="10" y="38" width="12" height="26" fill="var(--tape)"/><rect x="30" y="26" width="12" height="38" fill="var(--tape)"/><rect x="50" y="46" width="12" height="18" fill="var(--tape)"/><polyline points="10,28 30,16 48,30 64,10" fill="none" stroke="var(--bad)" stroke-width="4"/></svg><h3>3. Watch churn</h3><p style="color:var(--mut)">A six-month chart shows cancellations and churn rate so you can act early.</p></div>
+</div></section>
+<section class="sec"><h2>Who uses it</h2><div class="grid">
+ <div class="card q"><div class="who"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#0e7c86"/><circle cx="24" cy="19" r="8" fill="#f4d6b8"/><path d="M8 44c2-12 30-12 32 0" fill="#f2b01e"/><path d="M15 17c2-10 16-10 18 0c-4-4-14-4-18 0z" fill="#10242c"/></svg><div><b>Aanya, tea box owner</b><small>120 subscribers</small></div></div><p style="margin:0;color:var(--mut)">I used to chase billing dates in a spreadsheet. Now I see every due bill on one screen.</p></div>
+ <div class="card q"><div class="who"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#7a5ac8"/><circle cx="24" cy="19" r="8" fill="#d9a577"/><path d="M8 44c2-12 30-12 32 0" fill="#c8404f"/><path d="M16 16c2-9 14-9 16 0z" fill="#3a2a1a"/></svg><div><b>Rahul, snack box founder</b><small>80 subscribers</small></div></div><p style="margin:0;color:var(--mut)">The churn chart showed me cancellations spiking after month three. I changed my Plus box and they dropped.</p></div>
+ <div class="card q"><div class="who"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#2e8b57"/><circle cx="24" cy="19" r="8" fill="#8d5a3b"/><path d="M8 44c2-12 30-12 32 0" fill="#10242c"/><circle cx="24" cy="11" r="7" fill="#10242c"/></svg><div><b>Meera, book box curator</b><small>45 subscribers</small></div></div><p style="margin:0;color:var(--mut)">The admin view lets my team add customers and change plans without asking me.</p></div>
+</div></section>
+<section class="sec"><h2>Questions</h2>
+ <details><summary>How is the next billing date worked out?</summary><p>It counts forward from the customer’s start date in steps of one, three or twelve months, depending on their cycle.</p></details>
+ <details><summary>How is churn calculated?</summary><p>Customers cancelled in a month, divided by the customers who were active at the start of that month.</p></details>
+ <details><summary>Where is my data stored?</summary><p>In your own browser. Use “Reset demo data” below to start again.</p></details>
+</section>
+<footer><span>Subscription box manager. Built with HTML, CSS and JavaScript. Data saves in your browser.</span><button class="btn ghost sm" id="reset">Reset demo data</button></footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
